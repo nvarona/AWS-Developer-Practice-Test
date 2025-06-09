@@ -1,0 +1,322 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué servicio de AWS se utiliza para ejecutar código sin aprovisionar servidores?",
+    "options": ["EC2", "Lambda", "S3", "RDS"],
+    "answer": "Lambda",
+    "explanation": "AWS Lambda es un servicio sin servidor que permite ejecutar código en respuesta a eventos sin necesidad de aprovisionar o administrar servidores.",
+    "category": "Sin servidor"
+  },
+  {
+    "id": 2,
+    "question": "¿Qué servicio de AWS se utiliza para almacenar objetos en la nube?",
+    "options": ["DynamoDB", "S3", "RDS", "EFS"],
+    "answer": "S3",
+    "explanation": "Amazon S3 (Simple Storage Service) es un servicio de almacenamiento de objetos en la nube que proporciona escalabilidad, alta disponibilidad y seguridad.",
+    "category": "Almacenamiento"
+  },
+  {
+    "id": 3,
+    "question": "¿Cuál de los siguientes es un servicio de base de datos NoSQL completamente administrado?",
+    "options": ["RDS", "Aurora", "DynamoDB", "Redshift"],
+    "answer": "DynamoDB",
+    "explanation": "Amazon DynamoDB es un servicio de base de datos NoSQL completamente administrado que ofrece rendimiento rápido y predecible a cualquier escala.",
+    "category": "Bases de datos"
+  },
+  {
+    "id": 4,
+    "question": "¿Qué servicio de AWS permite implementar aplicaciones en contenedores Docker?",
+    "options": ["EC2", "ECS", "S3", "Lambda"],
+    "answer": "ECS",
+    "explanation": "Amazon ECS (Elastic Container Service) es un servicio de orquestación de contenedores que permite ejecutar aplicaciones en contenedores Docker.",
+    "category": "Contenedores"
+  },
+  {
+    "id": 5,
+    "question": "¿Qué servicio de AWS se utiliza para monitorear métricas y logs de tus recursos?",
+    "options": ["CloudTrail", "CloudWatch", "IAM", "SNS"],
+    "answer": "CloudWatch",
+    "explanation": "Amazon CloudWatch es un servicio de monitoreo que recopila y rastrea métricas, logs y eventos de tus recursos de AWS.",
+    "category": "Monitoreo"
+  },
+  {
+    "id": 6,
+    "question": "¿Qué servicio de AWS se utiliza para gestionar claves criptográficas de forma segura?",
+    "options": ["KMS", "S3", "IAM", "CloudFront"],
+    "answer": "KMS",
+    "explanation": "AWS KMS (Key Management Service) es un servicio de gestión de claves criptográficas que permite crear y controlar claves de cifrado para proteger tus datos.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 7,
+    "question": "¿Qué servicio de AWS se utiliza para enviar notificaciones por correo electrónico o SMS?",
+    "options": ["SQS", "SNS", "SES", "Lambda"],
+    "answer": "SNS",
+    "explanation": "Amazon SNS (Simple Notification Service) es un servicio de mensajería totalmente administrado que permite enviar notificaciones por correo electrónico, SMS y otros canales.",
+    "category": "Notificaciones"
+  },
+  {
+    "id": 8,
+    "question": "¿Qué servicio de AWS se utiliza para crear una cola de mensajes distribuida?",
+    "options": ["SNS", "SQS", "Lambda", "EC2"],
+    "answer": "SQS",
+    "explanation": "Amazon SQS (Simple Queue Service) es un servicio de colas de mensajes distribuidas que permite desacoplar y escalar microservicios, sistemas distribuidos y aplicaciones sin servidor.",
+    "category": "Mensajes"
+  },
+  {
+    "id": 9,
+    "question": "¿Qué servicio de AWS se utiliza para implementar aplicaciones sin servidor con integración API?",
+    "options": ["API Gateway", "Lambda", "EC2", "S3"],
+    "answer": "API Gateway",
+    "explanation": "Amazon API Gateway es un servicio completamente administrado que permite crear, publicar, mantener, monitorear y proteger APIs a cualquier escala. Se integra comúnmente con AWS Lambda para implementar aplicaciones sin servidor.",
+    "category": "Sin servidor"
+  },
+  {
+    "id": 10,
+    "question": "¿Qué servicio de AWS se utiliza para gestionar identidades y control de acceso?",
+    "options": ["IAM", "KMS", "CloudTrail", "CloudWatch"],
+    "answer": "IAM",
+    "explanation": "AWS Identity and Access Management (IAM) es un servicio que permite gestionar el acceso a los recursos de AWS de manera segura. Permite crear y administrar usuarios, grupos y políticas de permisos.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 11,
+    "question": "¿Qué servicio de AWS se utiliza para almacenar grandes volúmenes de datos estructurados para análisis?",
+    "options": ["DynamoDB", "Redshift", "RDS", "S3"],
+    "answer": "Redshift",
+    "explanation": "Amazon Redshift es un servicio de base de datos analítica masiva diseñado para ejecutar consultas complejas sobre grandes volúmenes de datos estructurados. Es ideal para análisis de datos empresariales.",
+    "category": "Bases de datos"
+  },
+  {
+    "id": 12,
+    "question": "¿Qué servicio de AWS se utiliza para registrar todas las llamadas a la API de AWS?",
+    "options": ["CloudTrail", "CloudWatch", "IAM", "KMS"],
+    "answer": "CloudTrail",
+    "explanation": "AWS CloudTrail registra todas las llamadas a la API de AWS, lo que permite auditar y rastrear actividades en tu cuenta de AWS. Es útil para cumplir con requisitos de seguridad y cumplimiento.",
+    "category": "Monitoreo"
+  },
+  {
+    "id": 13,
+    "question": "¿Qué servicio de AWS se utiliza para implementar aplicaciones web estáticas?",
+    "options": ["S3", "EC2", "Lambda", "ECS"],
+    "answer": "S3",
+    "explanation": "Amazon S3 (Simple Storage Service) puede alojar aplicaciones web estáticas directamente desde un bucket S3. Es una solución económica y escalable para sitios web sin contenido dinámico.",
+    "category": "Almacenamiento"
+  },
+  {
+    "id": 14,
+    "question": "¿Qué servicio de AWS se utiliza para mejorar el rendimiento de aplicaciones mediante caché en memoria?",
+    "options": ["RDS", "ElastiCache", "DynamoDB", "S3"],
+    "answer": "ElastiCache",
+    "explanation": "Amazon ElastiCache es un servicio de caché en memoria que mejora el rendimiento de aplicaciones al reducir la latencia de acceso a datos frecuentemente utilizados. Soporta Redis y Memcached.",
+    "category": "Rendimiento"
+  },
+  {
+    "id": 15,
+    "question": "¿Qué servicio de AWS se utiliza para alojar sitios web dinámicos con balanceadores de carga?",
+    "options": ["EC2", "S3", "Lambda", "Elastic Beanstalk"],
+    "answer": "Elastic Beanstalk",
+    "explanation": "AWS Elastic Beanstalk es un servicio que facilita la implementación y administración de aplicaciones web dinámicas. Proporciona automáticamente recursos como EC2, balanceadores de carga y bases de datos.",
+    "category": "Desarrollo"
+  },
+  {
+    "id": 16,
+    "question": "¿Qué servicio de AWS se utiliza para migrar bases de datos a la nube?",
+    "options": ["DMS", "RDS", "S3", "EFS"],
+    "answer": "DMS",
+    "explanation": "AWS Database Migration Service (DMS) es un servicio que facilita la migración de bases de datos locales o en la nube a AWS. Soporta migraciones homogéneas y heterogéneas.",
+    "category": "Migración"
+  },
+  {
+    "id": 17,
+    "question": "¿Qué servicio de AWS se utiliza para implementar pipelines de integración continua (CI/CD)?",
+    "options": ["CodePipeline", "CodeCommit", "CodeBuild", "Lambda"],
+    "answer": "CodePipeline",
+    "explanation": "AWS CodePipeline es un servicio que permite automatizar las etapas de CI/CD, desde la compilación del código hasta su despliegue en producción. Integra herramientas como CodeCommit y CodeBuild.",
+    "category": "Desarrollo"
+  },
+  {
+    "id": 18,
+    "question": "¿Qué servicio de AWS se utiliza para almacenar código fuente en repositorios Git?",
+    "options": ["CodeCommit", "CodeBuild", "CodeDeploy", "S3"],
+    "answer": "CodeCommit",
+    "explanation": "AWS CodeCommit es un servicio de repositorio Git completamente administrado que permite almacenar código fuente de forma segura y colaborar en proyectos de desarrollo.",
+    "category": "Desarrollo"
+  },
+  {
+    "id": 19,
+    "question": "¿Qué servicio de AWS se utiliza para implementar aplicaciones en múltiples regiones automáticamente?",
+    "options": ["Route 53", "CloudFront", "Global Accelerator", "Lambda"],
+    "answer": "Global Accelerator",
+    "explanation": "AWS Global Accelerator mejora la disponibilidad y el rendimiento de aplicaciones distribuidas en múltiples regiones al enrutar el tráfico a la región más cercana o disponible.",
+    "category": "Redes"
+  },
+  {
+    "id": 20,
+    "question": "¿Qué servicio de AWS se utiliza para distribuir contenido estático y dinámico globalmente?",
+    "options": ["CloudFront", "S3", "EC2", "EBS"],
+    "answer": "CloudFront",
+    "explanation": "Amazon CloudFront es una red de distribución de contenido (CDN) que acelera la entrega de contenido estático y dinámico a usuarios globales mediante una red de servidores distribuidos.",
+    "category": "Redes"
+  },
+  {
+    "id": 21,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una arquitectura sin servidor con API Gateway, Lambda y DynamoDB?",
+    "options": ["EC2", "ECS", "Serverless Framework", "Amplify"],
+    "answer": "Serverless Framework",
+    "explanation": "Serverless Framework es una herramienta que facilita la creación de aplicaciones sin servidor utilizando servicios como API Gateway, Lambda y DynamoDB.",
+    "category": "Sin servidor"
+  },
+  {
+    "id": 22,
+    "question": "¿Qué servicio de AWS permite ejecutar contenedores Docker sin gestionar la infraestructura subyacente?",
+    "options": ["EC2", "EKS", "Fargate", "Lambda"],
+    "answer": "Fargate",
+    "explanation": "AWS Fargate es un motor de computación sin servidor para contenedores que permite ejecutar aplicaciones en ECS o EKS sin necesidad de gestionar instancias EC2.",
+    "category": "Contenedores"
+  },
+  {
+    "id": 23,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una red privada virtual (VPC) con subredes públicas y privadas?",
+    "options": ["CloudFront", "Route 53", "VPC", "Direct Connect"],
+    "answer": "VPC",
+    "explanation": "Amazon VPC (Virtual Private Cloud) permite crear una red privada en AWS con subredes públicas y privadas, lo que proporciona aislamiento y control total sobre la infraestructura de red.",
+    "category": "Redes"
+  },
+  {
+    "id": 24,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una caché en memoria distribuida para mejorar el rendimiento de aplicaciones?",
+    "options": ["RDS", "ElastiCache", "DynamoDB", "S3"],
+    "answer": "ElastiCache",
+    "explanation": "Amazon ElastiCache es un servicio de caché en memoria que mejora el rendimiento de aplicaciones al reducir la latencia de acceso a datos frecuentemente utilizados. Soporta Redis y Memcached.",
+    "category": "Rendimiento"
+  },
+  {
+    "id": 25,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una cola de mensajes con entrega garantizada y ordenada?",
+    "options": ["SNS", "SQS FIFO", "SQS Standard", "Kinesis"],
+    "answer": "SQS FIFO",
+    "explanation": "Amazon SQS FIFO (First-In-First-Out) es una cola de mensajes que garantiza la entrega ordenada de mensajes y exactamente una vez, ideal para sistemas sensibles a la secuencia.",
+    "category": "Mensajes"
+  },
+  {
+    "id": 26,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una base de datos relacional completamente administrada compatible con MySQL y PostgreSQL?",
+    "options": ["DynamoDB", "Aurora", "Redshift", "RDS"],
+    "answer": "RDS",
+    "explanation": "Amazon RDS (Relational Database Service) es un servicio de base de datos relacional completamente administrado que soporta motores populares como MySQL, PostgreSQL, Oracle y SQL Server.",
+    "category": "Bases de datos"
+  },
+  {
+    "id": 27,
+    "question": "¿Qué servicio de AWS se utiliza para implementar un sistema de eventos basado en flujos de datos en tiempo real?",
+    "options": ["Kinesis", "SQS", "SNS", "Lambda"],
+    "answer": "Kinesis",
+    "explanation": "Amazon Kinesis es un servicio que permite procesar flujos de datos en tiempo real, como logs, eventos y métricas, y realizar análisis en tiempo real.",
+    "category": "Eventos"
+  },
+  {
+    "id": 28,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una política de cifrado de datos en reposo para S3?",
+    "options": ["IAM", "KMS", "CloudTrail", "CloudWatch"],
+    "answer": "KMS",
+    "explanation": "AWS Key Management Service (KMS) permite crear y gestionar claves criptográficas para cifrar datos en reposo en servicios como Amazon S3.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 29,
+    "question": "¿Qué servicio de AWS se utiliza para implementar un sistema de autenticación y autorización para aplicaciones móviles y web?",
+    "options": ["IAM", "Cognito", "KMS", "CloudFront"],
+    "answer": "Cognito",
+    "explanation": "Amazon Cognito es un servicio que proporciona autenticación, autorización y gestión de usuarios para aplicaciones móviles y web.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 30,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una aplicación web estática con un dominio personalizado y HTTPS?",
+    "options": ["S3 + CloudFront", "EC2", "Lambda", "Elastic Beanstalk"],
+    "answer": "S3 + CloudFront",
+    "explanation": "La combinación de Amazon S3 y CloudFront permite alojar aplicaciones web estáticas con un dominio personalizado y soporte para HTTPS mediante certificados SSL/TLS.",
+    "category": "Almacenamiento"
+  },
+  {
+    "id": 31,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una red de distribución de contenido (CDN) global?",
+    "options": ["Route 53", "CloudFront", "Global Accelerator", "Direct Connect"],
+    "answer": "CloudFront",
+    "explanation": "Amazon CloudFront es una CDN que distribuye contenido estático y dinámico a usuarios globales desde una red de servidores distribuidos, mejorando la velocidad y la latencia.",
+    "category": "Redes"
+  },
+  {
+    "id": 32,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una base de datos transaccional con escalabilidad automática?",
+    "options": ["DynamoDB", "Aurora", "RDS", "Redshift"],
+    "answer": "Aurora",
+    "explanation": "Amazon Aurora es una base de datos relacional compatible con MySQL y PostgreSQL que ofrece escalabilidad automática y alto rendimiento.",
+    "category": "Bases de datos"
+  },
+  {
+    "id": 33,
+    "question": "¿Qué servicio de AWS se utiliza para implementar un sistema de monitoreo de logs centralizados?",
+    "options": ["CloudWatch Logs", "CloudTrail", "SNS", "SQS"],
+    "answer": "CloudWatch Logs",
+    "explanation": "Amazon CloudWatch Logs permite recopilar, monitorear y almacenar logs de aplicaciones y servicios en un solo lugar para facilitar el análisis y la resolución de problemas.",
+    "category": "Monitoreo"
+  },
+  {
+    "id": 34,
+    "question": "¿Qué servicio de AWS se utiliza para implementar un sistema de notificaciones push para aplicaciones móviles?",
+    "options": ["SNS", "SES", "SQS", "Lambda"],
+    "answer": "SNS",
+    "explanation": "Amazon SNS (Simple Notification Service) permite enviar notificaciones push a dispositivos móviles, correos electrónicos y otros canales de comunicación.",
+    "category": "Notificaciones"
+  },
+  {
+    "id": 35,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una base de datos analítica masiva con capacidad de procesamiento paralelo?",
+    "options": ["DynamoDB", "Aurora", "Redshift", "RDS"],
+    "answer": "Redshift",
+    "explanation": "Amazon Redshift es una base de datos analítica masiva que utiliza procesamiento paralelo para ejecutar consultas complejas sobre grandes volúmenes de datos.",
+    "category": "Bases de datos"
+  },
+  {
+    "id": 36,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una arquitectura de microservicios con balanceadores de carga?",
+    "options": ["EC2", "ECS", "EKS", "Lambda"],
+    "answer": "ECS",
+    "explanation": "Amazon ECS (Elastic Container Service) permite implementar y gestionar arquitecturas de microservicios utilizando contenedores Docker con balanceadores de carga.",
+    "category": "Contenedores"
+  },
+  {
+    "id": 37,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una política de retención de versiones para objetos en S3?",
+    "options": ["IAM", "S3 Lifecycle Policies", "CloudTrail", "KMS"],
+    "answer": "S3 Lifecycle Policies",
+    "explanation": "Las políticas de ciclo de vida de S3 permiten definir reglas para mover objetos entre diferentes clases de almacenamiento o eliminarlos después de un período determinado.",
+    "category": "Almacenamiento"
+  },
+  {
+    "id": 38,
+    "question": "¿Qué servicio de AWS se utiliza para implementar un sistema de gestión de secretos y credenciales?",
+    "options": ["IAM", "Secrets Manager", "KMS", "CloudTrail"],
+    "answer": "Secrets Manager",
+    "explanation": "AWS Secrets Manager permite gestionar secretos y credenciales de forma segura, rotándolos automáticamente y accediendo a ellos de manera segura desde aplicaciones.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 39,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una arquitectura de eventos basada en patrones de diseño como EventBridge?",
+    "options": ["SNS", "SQS", "EventBridge", "Lambda"],
+    "answer": "EventBridge",
+    "explanation": "Amazon EventBridge es un servicio de bus de eventos que permite conectar aplicaciones mediante patrones de diseño basados en eventos, facilitando la integración de sistemas.",
+    "category": "Eventos"
+  },
+  {
+    "id": 40,
+    "question": "¿Qué servicio de AWS se utiliza para implementar una base de datos NoSQL con capacidad de consultas SQL-like?",
+    "options": ["DynamoDB", "Athena", "Redshift", "RDS"],
+    "answer": "DynamoDB",
+    "explanation": "Amazon DynamoDB es una base de datos NoSQL que permite realizar consultas SQL-like mediante PartiQL, una extensión de SQL para bases de datos NoSQL.",
+    "category": "Bases de datos"
+  }
+]

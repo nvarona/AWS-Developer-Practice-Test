@@ -318,5 +318,245 @@
     "answer": "DynamoDB",
     "explanation": "Amazon DynamoDB es una base de datos NoSQL que permite realizar consultas SQL-like mediante PartiQL, una extensión de SQL para bases de datos NoSQL.",
     "category": "Bases de datos"
+  },
+    {
+    "id": 41,
+    "question": "¿Qué servicio de AWS se utiliza para desplegar aplicaciones en instancias EC2?",
+    "options": ["AWS CloudFormation", "AWS CodeDeploy", "AWSS3"],
+    "answer": "AWS CodeDeploy",
+    "explanation": "AWS CodeDeploy es un servicio que automatiza el despliegue de aplicaciones en instancias EC2.",
+    "category": "AWS Services"
+  },
+  {
+    "id": 42,
+    "question": "¿Qué tipo de criptografía es más costosa en términos de CPU?",
+    "options": ["Criptografía simétrica", "Criptografía asimétrica", "Ambos sistemas son similares en consumo de CPU", "Ninguna de las anteriores"],
+    "answer": "Criptografía asimétrica",
+    "explanation": "La criptografía asimétrica es más costosa en términos de CPU debido a su complejidad matemática.",
+    "category": "Cryptography"
+  },
+  {
+    "id": 43,
+    "question": "¿Se pueden usar contenedores sobre EC2?",
+    "options": ["Los contenedores solo corren sobre serverless", "Los contenedores pueden correr en instancias EC2", "Los contenedores son de hecho un subservicio de EC2", "Los contenedores solo corren en Fargate"],
+    "answer": "Los contenedores pueden correr en instancias EC2",
+    "explanation": "Los contenedores pueden ejecutarse en instancias EC2 utilizando servicios como ECS o EKS.",
+    "category": "Containers"
+  },
+  {
+    "id": 44,
+    "question": "¿Dónde es más apropiado guardar un password?",
+    "options": ["En el EC2 user data", "En AWS Secrets Manager", "En AWS Lambda properties", "En un fichero de properties"],
+    "answer": "En AWS Secrets Manager",
+    "explanation": "AWS Secrets Manager es el servicio adecuado para almacenar credenciales de forma segura.",
+    "category": "Security"
+  },
+  {
+    "id": 45,
+    "question": "El propósito de CodeCommit es",
+    "options": ["Centralizar la subida de código de un equipo de desarrolladores", "Facilitar la compilación de aplicaciones", "Facilitar el despliegue de aplicaciones", "Facilitar el escalado de aplicaciones"],
+    "answer": "Centralizar la subida de código de un equipo de desarrolladores",
+    "explanation": "CodeCommit es un servicio de control de versiones similar a GitHub, diseñado para centralizar el código.",
+    "category": "AWS Services"
+  },
+  {
+    "id": 46,
+    "question": "El propósito de CodeBuild es",
+    "options": ["Centralizar la subida de código de un equipo de desarrolladores", "Facilitar la compilación de aplicaciones", "Facilitar el despliegue de aplicaciones", "Facilitar el escalado de aplicaciones"],
+    "answer": "Facilitar la compilación de aplicaciones",
+    "explanation": "CodeBuild es un servicio que compila el código fuente, ejecuta pruebas y produce artefactos.",
+    "category": "AWS Services"
+  },
+  {
+    "id": 47,
+    "question": "El propósito de CodeDeploy es",
+    "options": ["Centralizar la subida de código de un equipo de desarrolladores", "Facilitar la compilación de aplicaciones", "Facilitar el despliegue de aplicaciones", "Facilitar el escalado de aplicaciones"],
+    "answer": "Facilitar el despliegue de aplicaciones",
+    "explanation": "CodeDeploy automatiza el despliegue de aplicaciones en instancias EC2, on-premises o Lambda.",
+    "category": "AWS Services"
+  },
+  {
+    "id": 48,
+    "question": "¿Qué es una launch template?",
+    "options": ["El disco duro asociado a una EC2", "La plantilla de disco duro usada para llenar de datos un disco duro de bloques", "Una configuración de AMI, security groups y key pairs que se van a usar para lanzar EC2s", "Ninguna de las anteriores"],
+    "answer": "Una configuración de AMI, security groups y key pairs que se van a usar para lanzar EC2s",
+    "explanation": "Una launch template contiene la configuración necesaria para lanzar instancias EC2.",
+    "category": "AWS Services"
+  },
+  {
+    "id": 49,
+    "question": "¿En cuál de estos sistemas de almacenamiento es más probable que uses el protocolo NFS?",
+    "options": ["En S3", "En EBS", "En BSD", "En EFS"],
+    "answer": "En EFS",
+    "explanation": "EFS (Elastic File System) es un sistema de archivos compartido que soporta el protocolo NFS.",
+    "category": "Storage"
+  },
+  {
+    "id": 50,
+    "question": "¿Se puede almacenar un sitio web en S3?",
+    "options": ["No porque S3 no se puede exponer por HTTP a usuarios anónimos", "Sí, es así por defecto", "Sí, si se combina S3 con una EC2 que hostee la aplicación", "Sí, pero sólo páginas estáticas, los endpoints dinámicos los tendrás que poner en otro servicio"],
+    "answer": "Sí, pero sólo páginas estáticas, los endpoints dinámicos los tendrás que poner en otro servicio",
+    "explanation": "S3 puede alojar sitios web estáticos, pero no maneja lógica del lado del servidor.",
+    "category": "Storage"
+  },
+  {
+    "id": 51,
+    "question": "¿Qué ventaja aporta tener Read Replicas de BBDD Aurora?",
+    "options": ["Permite una mayor paralelización de las lecturas", "Permite más resiliencia al tener múltiples copias de los datos", "Reduce problemas de consistencia al poder solo modificar en un sitio", "Todas las anteriores"],
+    "answer": "Todas las anteriores",
+    "explanation": "Las Read Replicas mejoran el rendimiento, la resiliencia y la consistencia de las bases de datos.",
+    "category": "Databases"
+  },
+  {
+    "id": 52,
+    "question": "¿Qué desventaja aporta tener Read Replicas de BBDD Aurora?",
+    "options": ["Es más caro que no tenerlas", "Dependiendo de la configuración podrías tener lecturas desactualizadas", "Operacionalmente es más pesado de administrar", "Todas las anteriores"],
+    "answer": "Todas las anteriores",
+    "explanation": "Las Read Replicas tienen costos adicionales, posibles retrasos en las lecturas y mayor complejidad operativa.",
+    "category": "Databases"
+  },
+  {
+    "id": 53,
+    "question": "¿Qué beneficio aporta tener un entorno de AWS Lambda “prewarmed”?",
+    "options": ["El tiempo de arranque es menor", "El coste es menor", "El consumo de memoria es menor", "El consumo de CPU es menor"],
+    "answer": "El tiempo de arranque es menor",
+    "explanation": "Un entorno precalentado reduce el tiempo de inicio de las funciones Lambda.",
+    "category": "Serverless"
+  },
+  {
+    "id": 54,
+    "question": "¿Qué pila de protocolos es correcta?",
+    "options": ["TCP > IP > HTTP", "IP > TCP > HTTP", "HTTP > IP > TCP", "TCP > HTTP > IP"],
+    "answer": "IP > TCP > HTTP",
+    "explanation": "La pila de protocolos sigue el orden IP > TCP > HTTP.",
+    "category": "Networking"
+  },
+  {
+    "id": 55,
+    "question": "¿Una VPC puede expandir dos AZs?",
+    "options": ["No, pero una subred sí", "Sí, pero sólo si las AZs están en la misma región", "Sí, en cualquier caso", "No, tampoco las subredes"],
+    "answer": "Sí, pero sólo si las AZs están en la misma región",
+    "explanation": "Una VPC puede abarcar varias AZs dentro de la misma región.",
+    "category": "Networking"
+  },
+  {
+    "id": 56,
+    "question": "¿Qué ventaja tiene el modelo “On-demand” sobre el modelo “Reserved”?",
+    "options": ["Que es más barato", "Que es más caro", "Que se puede consumir sin avisar previamente a AWS", "Que se puede reservar con antelación y ahorrarte hasta un 50%"],
+    "answer": "Que se puede consumir sin avisar previamente a AWS",
+    "explanation": "El modelo On-demand permite usar recursos sin compromisos previos.",
+    "category": "Pricing Models"
+  },
+  {
+    "id": 57,
+    "question": "¿Qué significan las siglas ARN?",
+    "options": ["Application Random Number", "Amazon Resource Name", "Amazon Reference Number", "Amazon Resource Number"],
+    "answer": "Amazon Resource Name",
+    "explanation": "ARN identifica de manera única recursos en AWS.",
+    "category": "AWS Concepts"
+  },
+  {
+    "id": 58,
+    "question": "¿Cómo se llama el recurso que permite que una Lambda llame a un servicio?",
+    "options": ["Execution User", "Identity policy", "Execution Role", "Execution Group"],
+    "answer": "Execution Role",
+    "explanation": "Un Execution Role otorga permisos a una Lambda para interactuar con otros servicios.",
+    "category": "IAM"
+  },
+  {
+    "id": 59,
+    "question": "¿Cuál es el servicio que facilita el envío de correo desde otros servicios?",
+    "options": ["SQS", "SNS", "CloudWatch", "EventBridge"],
+    "answer": "SNS",
+    "explanation": "SNS (Simple Notification Service) puede enviar correos electrónicos como notificaciones.",
+    "category": "Messaging"
+  },
+  {
+    "id": 60,
+    "question": "¿Cuál es el servicio que permite configurar “topics” para comunicar servicios?",
+    "options": ["SQS", "SNS", "CloudWatch", "EventBridge"],
+    "answer": "SNS",
+    "explanation": "SNS permite configurar topics para la comunicación entre servicios.",
+    "category": "Messaging"
+  },
+  {
+    "id": 61,
+    "question": "¿Cuál es la diferencia entre una VM y un contenedor?",
+    "options": ["El contenedor tiene su propia copia del SO y la VM no", "La VM tiene su propia copia del SO y el contenedor no", "La VM consume CPU y el contenedor no", "El contenedor consume CPU y la VM no"],
+    "answer": "La VM tiene su propia copia del SO y el contenedor no",
+    "explanation": "Las VM incluyen un sistema operativo completo, mientras que los contenedores comparten el kernel del host.",
+    "category": "Containers"
+  },
+  {
+    "id": 62,
+    "question": "Un pod de Kubernetes",
+    "options": ["Permite especificar volúmenes", "Permite especificar contenedores", "Permite especificar ConfigMaps", "Todas las anteriores"],
+    "answer": "Todas las anteriores",
+    "explanation": "Un pod puede incluir volúmenes, contenedores y ConfigMaps.",
+    "category": "Kubernetes"
+  },
+  {
+    "id": 63,
+    "question": "¿Cuál es la diferencia entre EKS y ECS?",
+    "options": ["EKS es el servicio de contenedores y ECS es el servicio de pods", "ECS es el servicio de contenedores y EKS es el servicio de pods", "EKS es serverless, ECS es server-based", "ECS es serverless, EKS es server-based"],
+    "answer": "EKS es server-based, ECS es serverless",
+    "explanation": "EKS es un servicio de Kubernetes, mientras que ECS es un servicio de orquestación de contenedores.",
+    "category": "Containers"
+  },
+  {
+    "id": 64,
+    "question": "¿Qué son las presigned URLs?",
+    "options": ["Son accesibles solo para usuarios concretos", "Son accesibles para cualquier usuario", "Nunca expiran", "Expiran a las 24 horas"],
+    "answer": "Son accesibles solo para usuarios concretos",
+    "explanation": "Las presigned URLs permiten acceso temporal a recursos específicos.",
+    "category": "Security"
+  },
+  {
+    "id": 65,
+    "question": "¿Cómo se puede aumentar la CPU de un environment en AWS Lambda?",
+    "options": ["Con la opción que lo permite", "Con la opción de aumentar memoria", "Creando más environments", "Reduciendo el peso de la aplicación"],
+    "answer": "Con la opción de aumentar memoria",
+    "explanation": "En AWS Lambda, la CPU está ligada a la memoria asignada.",
+    "category": "Serverless"
+  },
+  {
+    "id": 66,
+    "question": "¿Cómo puede saber una lambda en qué ha consistido el evento que la dispara?",
+    "options": ["Mirando las variables de entorno", "Usando la librería boto3", "Mirando AWS Secrets Manager", "A través de un parámetro de entrada del método"],
+    "answer": "A través de un parámetro de entrada del método",
+    "explanation": "El evento que dispara una Lambda se pasa como parámetro al método handler.",
+    "category": "Serverless"
+  },
+  {
+    "id": 67,
+    "question": "¿Qué hace la siguiente línea?\naws s3api list-buckets --query 'Buckets[?starts_with(Name, \"bucket-pattern*\") == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force",
+    "options": ["Lista el contenido de los buckets que siguen un cierto patrón en el nombre", "Crea un listado de buckets según un cierto patrón", "Borra todos los buckets que siguen un cierto patrón en el nombre", "Rebasea un listado de buckets"],
+    "answer": "Borra todos los buckets que siguen un cierto patrón en el nombre",
+    "explanation": "Este comando lista y borra buckets que coinciden con un patrón específico.",
+    "category": "CLI"
+  },
+  {
+    "id": 68,
+    "question": "¿Qué hacen las siguientes líneas?\nCreateTableRequest request = new CreateTableRequest()\n.WithAttributeDefinitions(new AttributeDefinition(\n\"Name\", ScalarAttributeType.S))\n.withKeySchema(new KeySchemaElement(\"Name\", KeyType.HASH))\n.withProvisionedThroughput(new ProvisionedThroughput(\nnew Long(10), new Long(10)))\n.withTableName(table_name);\nfinal AmazonDynamoDB ddb = AmazonDynamoDBClientBuilder.defaultClient();\nCreateTableResult result = ddb.createTable(request);",
+    "options": ["Crea una solicitud HTTP que irá al cloud de AWS para crear una tabla de DynamoDB", "Crea una solicitud TCP que irá al cloud de AWS para crear una tabla de DynamoDB", "Crea una solicitud HTTP que irá al cloud de AWS para crear un item en una tabla de DynamoDB"],
+    "answer": "Crea una solicitud HTTP que irá al cloud de AWS para crear una tabla de DynamoDB",
+    "explanation": "Este código crea una tabla en DynamoDB mediante una solicitud HTTP.",
+    "category": "Databases"
+  },
+  {
+    "id": 69,
+    "question": "¿Qué hace el siguiente buildspec?\nversion: 0.2\nphases:\n  install:\n    commands:\n      - npm install\n  build:\n    commands:\n      - npm test\nartifacts:\n  files:\n    - '**/*'",
+    "options": ["Instala dependencias y ejecuta unos tests", "Instala npm y ejecuta unos tests", "Despliega una aplicación", "Comitea código a un repositorio"],
+    "answer": "Instala dependencias y ejecuta unos tests",
+    "explanation": "Este buildspec instala dependencias y ejecuta pruebas con npm.",
+    "category": "CI/CD"
+  },
+  {
+    "id": 70,
+    "question": "El siguiente fichero ¿de qué servicio es?\nversion: 0.0\nResources:\n  - TargetService:\n      Type: AWS::ECS::Service\n      Properties:\n        TaskDefinition:\n          \"arn:aws:ecs:us-east-1:111222333444:task-definition/my-task-definition-family-name:1\"\n        LoadBalancerInfo:\n          ContainerName: \"SampleApplicationName\"\n          ContainerPort: 80",
+    "options": ["CodeCommit", "CodeBuild", "CodeDeploy", "CodePipeline"],
+    "answer": "CodeDeploy",
+    "explanation": "Este archivo define un servicio ECS para CodeDeploy.",
+    "category": "CI/CD"
   }
 ]

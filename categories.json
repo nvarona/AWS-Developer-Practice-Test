@@ -1,0 +1,31 @@
+{
+  "categories": [ 
+	"Sin servidor",
+	"Almacenamiento",
+	"Bases de datos",
+	"Contenedores",
+	"Monitoreo",
+	"Seguridad",
+	"Notificaciones",
+	"Mensajes",
+	"Rendimiento",
+	"Desarrollo",
+	"Migración",
+	"Redes",
+	"Eventos",
+	"AWS Services",
+	"Cryptography",
+	"Containers",
+	"Security",
+	"Storage",
+	"Databases",
+	"Serverless",
+	"Networking",
+	"Pricing Models",
+	"AWS Concepts",
+	"IAM,Messaging",
+	"Kubernetes",
+	"CLI",
+	"CI/CD"
+  ]
+}

@@ -558,5 +558,101 @@
     "answer": "CodeDeploy",
     "explanation": "Este archivo define un servicio ECS para CodeDeploy.",
     "category": "CI/CD"
+  },
+  {
+    "id": 71,    
+    "question": "¿Qué servicio de AWS proporciona almacenamiento de objetos escalable?",
+    "options": ["Amazon EC2", "Amazon S3", "Amazon RDS", "Amazon Lambda"],
+    "answer": "Amazon S3",
+    "explanation": "Amazon S3 (Simple Storage Service) es el servicio de almacenamiento de objetos de AWS que permite almacenar y recuperar cualquier cantidad de datos desde cualquier lugar.",
+    "category": "Almacenamiento"
+  },
+  {
+    "id": 72,    
+    "question": "¿Cuál es el límite de tiempo de ejecución máximo para una función Lambda?",
+    "options": ["5 minutos", "10 minutos", "15 minutos", "30 minutos"],
+    "answer": "15 minutos",
+    "explanation": "AWS Lambda tiene un límite de tiempo de ejecución máximo de 15 minutos por invocación.",
+    "category": "Compute"    
+  },
+  {
+    "id": 73,
+    "question": "¿Qué servicio de AWS se utiliza para el balanceado de carga de aplicaciones?",
+    "options": ["Amazon Route 53", "Amazon CloudFont", "Elastic Load Balancer", "Amazon API Gateway"],
+    "answer": "Elastic Load Balancer",
+    "explanation": "Elastic Load Balancer (ELB) distribuye automáticamente el tráfico de aplicaciones entrantes entre múltiples destinos.",
+    "category": "Redes"
+  },
+  {
+    "id": 74,    
+    "question": "¿Qué base de datos NoSQL ofrece AWS?",
+    "options": ["Amazon RDS", "Amazon Aurora", "Amazon DynamoDB", "Amazon Redshift"],
+    "answer": "Amazon DynamoDB",
+    "explanation": "Amazon DynamoDB es un servicio de base de datos NoSQL completamente administrado que proporciona un rendimiento rápido y predecible.",
+    "category": "Base de Datos"
+  },
+  {
+    "id": 75,    
+    "question": "¿Cuál es el servicio de AWS para la entrega de contenido (CDN)?",
+    "options": ["Amazon S3", "Amazon CloudFront", "Amazon Route 53", "Amazon API Gateway"],
+    "answer": "Amazon CloudFront",
+    "explanation": "Amazon CloudFront es un servicio de red de entrega de contenido (CDN) que entrega datos, videos, aplicaciones y APIs a clientes globalmente.",
+    "category": "Redes"
+  },
+  {
+    "id": 76,    
+    "question": "¿Qué servicio permite ejecutar código sin gestionar servidores?",
+    "options": ["Amazon EC2", "Amazon ECS", "AWS Lambda", "Amazon Lightsail"],
+    "answer": "AWS Lambda",
+    "explanation": "AWS Lambda es un servicio de computación sin servidor que ejecuta código en respuesta a eventos sin necesidad de gestionar servidores.",
+    "category": "Compute"
+  },
+  {
+    "id": 77,    
+    "question": "¿Cuál es el servicio de AWS para monitoreo y observabilidad?",
+    "options": ["AWS CloudTrail", "Amazon CloudWatch", "AWS X-Ray", "AWS Config"],
+    "answer": "Amazon CloudWatch",
+    "explanation": "Amazon CloudWatch es un servicio de monitoreo y observabilidad que proporciona datos y estadísticas procesables para aplicaciones y recursos de AWS.",
+    "category": "Monitoreo"
+  },
+  {
+    "id": 78,    
+    "question": "¿Qué servicio se usa para gestionar identidades y accesos en AWS?",
+    "options": ["AWS IAM", "Amazon Cognito", "AWS Directory Service", "AWS SSO"],
+    "answer": "AWS IAM",
+    "explanation": "AWS Identity and Access Management (IAM) permite gestionar de forma segura el acceso a los servicios y recursos de AWS.",
+    "category": "Seguridad"
+  },
+  {
+    "id": 79,    
+    "question": "¿Cuál es el servicio de colas de mensajes de AWS?",
+    "options": ["Amazon SNS", "Amazon SQS", "Amazon Kinesis", "AWS Step Functions"],
+    "answer": "Amazon SQS",
+    "explanation": "Amazon Simple Queue Service (SQS) es un servicio de colas de mensajes completamente administrado que permite desacoplar y escalar microservicios.",
+    "category": "Integración"
+  },
+  {
+    "id": 80,    
+    "question": "¿Qué servicio de AWS proporciona un data warehouse completamente administrado?",
+    "options": ["Amazon RDS", "Amazon DynamoDB", "Amazon Redshift", "Amazon Aurora"],
+    "answer": "Amazon Redshift",
+    "explanation": "Amazon Redshift es un servicio de data warehouse completamente administrado que permite analizar datos usando SQL estándar y herramientas de BI existentes.",
+    "category": "Base de Datos"
+  },
+  {
+    "id": 81,    
+    "question": "¿Cuál es el servicio para crear APIs REST y WebSocket?",
+    "options": ["AWS Lambda", "Amazon API Gateway", "Amazon CloudFront", "AWS AppSync"],
+    "answer": "Amazon API Gateway",
+    "explanation": "Amazon API Gateway es un servicio completamente administrado que facilita la creación, publicación, mantenimiento, monitoreo y protección de APIs REST y WebSocket.",
+    "category": "Integración"
+  },
+  {
+    "id": 82,    
+    "question": "¿Qué servicio permite el almacenamiento de archivos compartido para EC2?",
+    "options": ["Amazon S3", "Amazon EBS", "Amazon EFS", "AWS Storage Gateway"],
+    "answer": "Amazon EFS",
+    "explanation": "Amazon Elastic File System (EFS) proporciona un sistema de archivos NFS completamente administrado para uso con instancias de Amazon EC2.",
+    "category": "Almacenamiento"
   }
 ]

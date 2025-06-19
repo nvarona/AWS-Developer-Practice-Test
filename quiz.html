@@ -3,48 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Práctica AWS Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-    }
-    .question {
-      margin-bottom: 20px;
-    }
-    .result {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    /* Estilo para el botón */
-    #submit {
-      display: block; /* Hace que el botón sea un bloque independiente */
-      margin-top: 30px; /* Añade espacio entre las respuestas y el botón */
-      padding: 10px 20px; /* Espacio interno para el texto del botón */
-      background-color: #007bff; /* Color de fondo azul */
-      color: white; /* Color del texto blanco */
-      border: none; /* Sin bordes */
-      border-radius: 5px; /* Bordes redondeados */
-      cursor: pointer; /* Cambia el cursor al pasar por encima */
-      font-size: 16px; /* Tamaño del texto */
-    }
-    #submit:hover {
-      background-color: #0056b3; /* Cambia el color al pasar el ratón */
-    }
-  </style>
+  <title>AWS Developer Quiz - Práctica Interactiva</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Prueba de práctica: AWS Developer</h1>
-  <div id="quiz"></div>
-  <button id="submit">Enviar respuesta</button>
-  <div id="result" class="result"></div>
-
-  <!-- Enlazar el archivo JavaScript -->
-  <!-- Usar JavaScript para agregar un timestamp dinámic
-  <script src="script.js?cachebuster=<%= new Date().getTime() %>"></script> -->
-  <!-- Si usas Python para servir el archivo -->
-  <script src="script.js?cachebuster=<%= int(time.time()) %>"></script>
-  <!-- Inluir parametro de cache 
-  <script src="script.js?v=1.0.1"></script> -->
+  <div class="container">
+    <div class="header">
+      <h1>🚀 AWS Developer Quiz</h1>
+      <p>Pon a prueba tus conocimientos con esta práctica interactiva</p>
+    </div>
+    
+    <div class="content">
+      <div id="quiz-section">
+        <div class="progress-container">
+          <div class="progress-header">
+            <div class="question-counter" id="question-counter">Pregunta 1 de 10</div>
+            <div class="category-badge" id="category-badge">Cargando...</div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width: 10%"></div>
+          </div>
+        </div>
+        
+        <div class="question-container" id="quiz-content">
+          <div class="question-text">Cargando preguntas...</div>
+        </div>
+        
+        <div class="submit-container">
+          <button id="submit-btn" class="submit-btn">Siguiente Pregunta</button>
+        </div>
+      </div>
+      
+      <div id="results-section" class="results-container hidden">
+        <!-- Los resultados se insertarán aquí -->
+      </div>
+    </div>
+  </div>
+  <script src="script_v2.js"></script>
 </body>
 </html>

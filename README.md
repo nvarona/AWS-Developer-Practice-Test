@@ -109,15 +109,18 @@ Tu servidor ofrece varias rutas útiles para monitoreo y desarrollo:
 | Ruta            | Descripción                                                                           |
 |-----------------|---------------------------------------------------------------------------------------|
 | `/`             | Sirve los archivos estáticos desde el directorio actual                               |
+| `/files`        | Explorador mejorado desde el directorio actual                                        |
+| `/simple-files` | Explorador simple desde el directorio actual                                          |
 | `/shutdown`     | Apaga el servidor de forma controlada                                                 |
 | `/server-info`  | Muestra información detallada del servidor (SO, memoria, hora, etc.)                  |
 | `/health-check` | Devuelve estado básico del servidor en formato JSON (ideal para monitoreo automático) |
+|-----------------+---------------------------------------------------------------------------------------|
 
 ---
 
 ### 🖥️ Simular diferentes sistemas operativos
 
-Para probar cómo se muestra la información del sistema operativo puedes usar parámetros en la URL:
+Para probar cómo se muestra la información del sistema operativo de otros sistemas operativos, puedes usar parámetros en la URL:
 
 ```
 http://localhost:8000/server-info?os=Windows
@@ -153,14 +156,15 @@ El proyecto con las dos aplicaciones está organizado de la siguiente manera:
 
 ```
 /aws-developer-practice-test
-  ├── quiz.html        # Página principal de la aplicación
-  ├── server.py        # Si quiere ejecutar en local un servidor web para ofrecer sin cache el Quizz
-  ├── script.js        # Lógica de la aplicación (carga de preguntas, validación, etc.)
-  ├── questions.json   # Base de datos de preguntas con explicaciones y categorías
+  ├── quiz.html        # Página principal de la aplicación de preguntas de AWS developer
+  ├── style.css        # Archivo con el diseño de la pagina web de preguntas
+  ├── script_v2.js     # Lógica de la aplicación (carga de preguntas, validación, etc.)
+  ├── questions.json   # Base de datos de tipo JSON de preguntas con explicaciones y categorías
+  ├── server.py        # Si neceistas ejecutar en local un servidor web para ofrecer sin cache el Quiz
   ├── README.md        # Este archivo
   ├── LICENSE          # Licencia del proyecto
   ├── .gitignore       # Archivos ignorados por Git
-  ├── admin.html       # Panel de administración de preguntas
+  ├── quiz-admin.html  # Página del Panel de administración de preguntas y repuestas
   ├── script-admin.js  # Lógica del gestor de preguntas
   ├── categories.json  # Configuración de categorías
   ├── style-admin.css  # Archivo con el diseño de la pagina web
@@ -169,9 +173,11 @@ El proyecto con las dos aplicaciones está organizado de la siguiente manera:
 
 ---
 
-## ✨ Personalización
+## ✨ Personalización de nuevas preguntas
 
-Si deseas agregar más preguntas o modificar las existentes, tienes dos formas para hacerlo, la primera simplemente edita el archivo `questions.json`. Asumes el riesgo de poder equivocarte. La segunda mas profesional es entrar en la pagina de `admin.html`, donde tendras todas las facilidades para editar el contenido de las preguntas. Cada pregunta debe seguir este formato:
+Si deseas agregar más preguntas o modificar las existentes, tienes dos formas para hacerlo, la primera simplemente edita el archivo `questions.json`. Asumes el riesgo de poder equivocarte. Si necesita validador su JSONs puede usar esta página -> https://jsonlint.com/ 
+
+La segunda opción mas profesional es entrar en la pagina de `quiz-admin.html`, donde tendras todas las facilidades para editar el contenido de las preguntas con un sistema CRUD. Cada pregunta debe seguir este formato:
 
 ```json
 {
@@ -223,14 +229,14 @@ Además del sistema de práctica de exámenes, ahora incluimos un **sistema comp
 
 ```
 /aws-developer-practice-test
-  ├── admin.html              # Panel de administración de preguntas
+  ├── quiz-admin.html         # Panel de administración de preguntas
   ├── script-admin.js         # Lógica del gestor de preguntas
   ├── categories.json         # Configuración de categorías
   ├── config.json             # Configuración general
   ├── ...                     # (resto de archivos existentes)
 ```
 
-## 🖥 Cómo Acceder al Gestor
+## 🖥 Cómo Acceder al Gestor de preguntas
 
 1. Ejecuta el servidor local como antes:
    ```bash
@@ -239,7 +245,7 @@ Además del sistema de práctica de exámenes, ahora incluimos un **sistema comp
 
 2. Abre en tu navegador:
    ```
-   http://localhost:8000/admin.html
+   http://localhost:8000/quiz-admin.html
    ```
 
 ## ✨ Personalización Avanzada
@@ -279,6 +285,7 @@ Ejemplo de `categories.json`:
 - Estadísticas de rendimiento por categoría
 - Modo creación de exámenes personalizados
 - Integración con AWS API para datos actualizados
+- Nuevas preguntas del certificado de DevOps
 
 ---
 
@@ -336,5 +343,3 @@ Si tienes preguntas o comentarios sobre este proyecto, no dudes en contactarme:
 🌟 **Gracias por usar AWS Developer Practice Test!** 🌟
 
 ---
-
-### Nota adicional:

@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  overflow: hidden;
+  animation: slideIn 0.8s ease-out;
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(50px) scale(0.95); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0) scale(1); 
+  }
+}
+
+.header {
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+  color: white;
+  padding: 40px 30px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 20%, transparent 70%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  position: relative;
+  z-index: 2;
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  position: relative;
+  z-index: 2;
+}
+
+.content {
+  padding: 50px 40px;
+}
+
+.progress-container {
+  margin-bottom: 40px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.question-counter {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.category-badge {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e9ecef;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
+  border-radius: 6px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.question-container {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border-radius: 15px;
+  padding: 35px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+  animation: questionSlide 0.6s ease-out;
+}
+
+@keyframes questionSlide {
+  from { 
+    opacity: 0; 
+    transform: translateX(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+.question-text {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.option input[type="radio"] {
+  display: none;
+}
+
+.option-label {
+  display: block;
+  padding: 20px 25px;
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.option-label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(52, 152, 219, 0.1), transparent);
+  transition: left 0.5s ease;
+}
+
+.option:hover .option-label {
+  border-color: #3498db;
+  box-shadow: 0 8px 25px rgba(52, 152, 219, 0.15);
+  transform: translateY(-2px);
+}
+
+.option:hover .option-label::before {
+  left: 100%;
+}
+
+.option input[type="radio"]:checked + .option-label {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border-color: #2980b9;
+  box-shadow: 0 10px 30px rgba(52, 152, 219, 0.3);
+  transform: translateY(-3px);
+}
+
+.submit-container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  border: none;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 30px rgba(46, 204, 113, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.submit-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(46, 204, 113, 0.4);
+}
+
+.submit-btn:hover::before {
+  left: 100%;
+}
+
+.submit-btn:active {
+  transform: translateY(-1px);
+}
+
+.results-container {
+  text-align: center;
+  padding: 40px;
+  animation: resultsAppear 0.8s ease-out;
+}
+
+@keyframes resultsAppear {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+.score-display {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.thermometer-container {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 30px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.thermometer {
+  width: 100%;
+  height: 30px;
+  background-color: #e9ecef;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.thermometer-fill {
+  height: 100%;
+  border-radius: 15px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.performance-text {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.failed-questions {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.failed-questions h3 {
+  color: #e74c3c;
+  border-bottom: 3px solid #e74c3c;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+}
+
+.category-section {
+  margin-bottom: 30px;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  border-left: 4px solid #e74c3c;
+}
+
+.category-title {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.failed-question {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.failed-question p {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.failed-question strong {
+  color: #2c3e50;
+}
+
+.user-answer {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.correct-answer {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.explanation {
+  background: #f8f9fa;
+  border-left: 4px solid #3498db;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #2c3e50;
+}
+
+.congratulations {
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  color: white;
+  padding: 30px;
+  border-radius: 15px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.congratulations h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.congratulations p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .content {
+    padding: 30px 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+  }
+  
+  .option-label {
+    padding: 15px 20px;
+    font-size: 1rem;
+  }
+  
+  .score-display {
+    font-size: 2.5rem;
+  }
+}
